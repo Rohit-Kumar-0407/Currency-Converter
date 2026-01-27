@@ -20,8 +20,8 @@ This is a helpful Currency Converter which can be used to convert any amount fro
 - Use The Tool
 
 ## Project Screenshots
-![Home-page](./img/home-page)
-![used-page](./img/used-page)
-![On-mobile](./img/on-mobile)
+![Home-page](./img/home-page.png)
+![used-page](./img/used-page.png)
+![On-mobile](./img/on-mobile.png)
 <br>
 ### Feel free to contact for feedback and suggestions.
