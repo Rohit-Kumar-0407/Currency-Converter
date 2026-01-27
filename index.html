@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 id="heading">Currency Converter</h1>
+            <form action="#">
+                <div id="amount">
+                    <p id="amount-heading">Enter Amount:</p>
+                    <input type="number" placeholder="Enter Amount">
+                </div>
+                <div id="selection">
+                    <div id="from">
+                        <p class="selection-heading">From: </p>
+                        <div class="flag-container">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="from-flag" class="flag" id="From-flag">
+                        </div>   
+                        <select name="From" class="selection_menu">
+                            
+                        </select>
+                    </div>
+                    <i class="ri-exchange-line" id="symbol"></i>
+                    <div id="to">
+                        <p class="selection-heading">To: </p>
+                        <div class="flag-container">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="to-flag" class="flag" id="To-flag">
+                        </div>
+                            <select name="To" class="selection_menu">
+                                
+                            </select>
+                    </div>
+                </div>
+                <p class="answer-heading">Value:</p>
+                <div id="answer"></div>
+                <button id="exchange-btn">Get Exchange Rate</button>
+            </form>
+        </div>
+    </main>
+    <script src="./codes.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
