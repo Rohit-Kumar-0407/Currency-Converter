@@ -14,7 +14,7 @@ This is a helpful Currency Converter which can be used to convert any amount fro
 - Use The Tool
 
 2) Direct Method:
-- Click on "" to access through deployed website.
+- Click on "https://rohit-kumar-0407.github.io/Currency-Converter/" to access through deployed website.
 - When danger pop appears, click on "More"
 - Click on "visit Unsafe website"
 - Use The Tool
