@@ -7,6 +7,12 @@ This is a helpful Currency Converter which can be used to convert any amount fro
 3) JavaScript
 4) API : ExchangeRate-API (https://www.exchangerate-api.com)
 
+## Features
+- Conversion for upto 165 currencies.
+- Up-to-date conversion rate.
+- Instant value currency conversion between any two currencies.
+- Added Swap Functionality to swap currencies.
+
 ## How To Use
 1) Import Method:
 - Import all the files into the local system using git or download as zip.
