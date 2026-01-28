@@ -5,6 +5,9 @@ const btn = document.querySelector("#exchange-btn");
 const FromCurr = document.querySelector("#from .selection_menu");
 const ToCurr = document.querySelector("#to .selection_menu");
 const Answer = document.querySelector("#answer");
+const swap = document.querySelector("#symbol");
+const FromFlag = document.querySelector("#From-flag");
+const ToFlag = document.querySelector("#To-flag");
 
 for(let select of selection_menu) {
     for(let CurrCode in countryList) {
@@ -49,3 +52,23 @@ btn.addEventListener("click", async (evt) => {
     let conv_amount = amount_value*conv_rate;
     Answer.innerText = `${amount_value} ${FromCurr_code} = ${conv_amount} ${ToCurr_code}`;
 });
+
+swap.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    let from_src = FromFlag.src;
+    let from_id = FromFlag.id;
+    let from_curr = FromCurr.name;
+    let to_src = ToFlag.src;
+    let to_id = ToFlag.id;
+    let to_curr = ToCurr.name;
+    FromFlag.src = to_src;
+    FromFlag.id = to_id;
+    FromCurr.name = to_curr;
+    ToFlag.src = from_src;
+    ToFlag.id = from_id;
+    ToCurr.name = from_curr;
+    let FromCurr_code = FromCurr.value;
+    let ToCurr_code = ToCurr.value;
+    FromCurr.value = ToCurr_code;
+    ToCurr.value = FromCurr_code;
+})
